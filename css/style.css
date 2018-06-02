@@ -25,6 +25,44 @@
 
 /*################# STYLES #################*/
 
+body {
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+section {
+    padding: 20px 10px 20px 50px;
+}
+
+aside {
+    padding: 20px 50px 20px 10px;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+#logo-header {
+    font-family: 'beautiful_people_personal_uRg';
+    color: white;
+    font-size: 30px;
+    display: block;
+    margin: 3px 25px 0 20px;
+    text-shadow: 1px 1px 15px rgba(15, 15, 15, 1);
+    letter-spacing: 1.5px;
+}
+
 #navbar {
   background-color: #333;
 }
@@ -133,7 +171,7 @@ li a:hover {
 #navbar ul ul {
   display: none;
   position: relative;
-  top: 1px;
+  top: 2px;
   background-color: #333;
 }
 
