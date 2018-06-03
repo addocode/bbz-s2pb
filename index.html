@@ -6,8 +6,18 @@
     <meta charset="utf-8" />
     <meta name="description" content="Landscape Photography Blog | On behalf of BBZ Biel - CFP Bienne" />
     <meta name="author" content="Adam Dolinsky" />
+    
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
     <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
@@ -23,13 +33,19 @@
             <div class="images">
                 <div class="images-inner">
                     <div class="image-slide">
-                        <div class="image bg-yellow" style="background-color:yellow;"></div>
+                        <div class="image bg-yellow" style="background-color:yellow;">
+                            <img src="img/slider-1.jpg" alt="Slider Image 1">
+                        </div>
                     </div>
                     <div class="image-slide">
-                        <div class="image bg-blue" style="background-color:pink;"></div>
+                        <div class="image bg-blue" style="background-color:pink;">
+                            <img src="img/slider-2.jpg" alt="Slider Image 2">
+                        </div>
                     </div>
                     <div class="image-slide">
-                        <div class="image bg-red" style="background-color:orange;"></div>
+                        <div class="image bg-red" style="background-color:orange;">
+                            <img src="img/slider-3.jpg" alt="Slider Image 3">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,10 +66,11 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery-select.html">Gallery</a>
                     <ul>
-                        <li><a href="gallery-1.html">Gallery 1</a></li>
-                        <li><a href="gallery-2.html">Gallery 2</a></li>
-                        <li><a href="gallery-3.html">Gallery 3</a></li>
-                        <li><a href="gallery-4.html">Gallery 4</a></li>
+                        <li><a href="gallery-1.html">Meadows</a></li>
+                        <li><a href="gallery-2.html">Sea</a></li>
+                        <li><a href="gallery-3.html">Sunset</a></li>
+                        <li><a href="gallery-4.html">Mountains</a></li>
+                        <li><p id="arrow-1">«</p></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -62,9 +79,15 @@
                         <li><a href="https://sponsor1.web" target="_blank">Sponsor 1</a></li>
                         <li><a href="https://sponsor2.web" target="_blank">Sponsor 2</a></li>
                         <li><a href="https://sponsor3.web" target="_blank">Sponsor 3</a></li>
+                        <li><p id="arrow-2">«</p></li>
                     </ul>
                 </li>
-                <li><img src="http://via.placeholder.com/59x59" alt="Icon"></li>
+                <li>
+                    <form action="php/search.php">
+                        <input type="text" id="search-input" name="search" placeholder="Search this website...">
+                    </form>
+                    <img id="search-icon" src="img/search.svg" alt="Search">
+                </li>
             </ul>
         </nav>
     </header>
@@ -72,6 +95,7 @@
     <main>
         <div class="wrapper">
             <section>
+                <h1>Section Title</h1>
                 <h2>Content 1</h2>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
