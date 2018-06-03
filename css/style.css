@@ -41,10 +41,14 @@ main {
 
 section {
   padding: 20px 10px 20px 50px;
+  float: left;
+  width: 75%;
 }
 
 aside {
-  padding: 20px 40px 20px 20px;
+  float: right;
+  width: 25%;
+  padding: 20px 30px 20px 20px;
 }
 
 h1, h2, h3, h4, h5, h6, a, p {
@@ -152,16 +156,6 @@ p {
   padding-top: 60px;
 }
 
-section {
-  float: left;
-  width: 70%;
-}
-
-aside {
-  float: right;
-  width: 30%;
-}
-
 footer {
   background-color: rgba(14, 14, 14, 0.9);
   height: 300px;
@@ -231,7 +225,7 @@ nav ul li ul li a img:hover {
     position: fixed;
     right: 0px;
     bottom: 200px;
-    height: 230px;
+    height: 200px;
     width: 0px;
     background-color: rgba(0, 0, 15, 0.5);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5);
@@ -239,16 +233,16 @@ nav ul li ul li a img:hover {
 
 #social-bar div {
     position: absolute;
-    bottom: 2px;
+    bottom: 7px;
     left: 6px;
 }
 
 #social-bar div > * {
     border-radius: 40px;
-    height: 50px;
-    width: 50px;
-    font-size: 26px;
-    padding: 13px 0 0 0;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding: 10px 0 0 0;
     text-align: center;
     text-decoration: none;
     margin: 3px 0;
@@ -280,6 +274,43 @@ nav ul li ul li a img:hover {
 }
 
 /*###############################################*/
+
+
+
+
+/*########### ASIDE ############*/
+
+aside article {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 6px;
+}
+
+aside article > * {
+    font-size: 14px;
+}
+
+aside article h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.ruler {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    margin: 10px 0 10px 0;
+}
+
+#img-team {
+    width: 255px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+/*###############################*/
+
 
 
 
