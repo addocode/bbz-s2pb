@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'montserratregular', 'Helvetica', 'Arial', sans-serif;
 }
 
 .wrapper {
@@ -295,6 +295,7 @@ aside article > * {
 aside article h2 {
     font-size: 20px;
     text-align: center;
+    margin-top: 8px;
 }
 
 .ruler {
@@ -302,6 +303,10 @@ aside article h2 {
     height: 2px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
     margin: 10px 0 10px 0;
+}
+
+.ruler-dashed {
+  border-top: 1px dashed rgba(255, 255, 255, 0.17);
 }
 
 #img-team {
@@ -320,6 +325,7 @@ aside article h2 {
   padding: 6px 0;
   display: block;
   border-radius: 3px;
+  margin: 5px 0;
 }
 
 .button:hover {
@@ -328,6 +334,167 @@ aside article h2 {
     transition: all 0.3s;
 }
 
+#aside-gallery figure {
+   width: 110px;
+   height: 110px;
+   overflow: hidden;
+   display: inline;
+}
+
+#aside-gallery figure img {
+  margin: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#aside-gallery figure img:hover {
+  background-color: rgba(255, 255, 255, 1.0);
+  box-shadow: 0 0 4px 4px rgba(0, 140, 186, 0.5);
+  transition: all 0.3s;
+  opacity: 0.6;
+  cursor: pointer;
+  width: 111px;
+  height: 111px;
+}
+
+#aside-archives {
+  height: 310px;
+}
+
+#aside-archives div {
+  float: left;
+  display: block;
+}
+
+#aside-archives div a {
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  font-family: 'montserratregular';
+  margin: 5px 9px;
+}
+
+#aside-archives div a:hover {
+  font-family: 'montserratbold';
+  color: rgba(255, 30, 30, 0.8);
+  margin-left: 3px;
+  transition: all 0.2s;
+}
+
+h3 {
+  font-family: 'montserratbold';
+  font-size: 13px;
+  text-align: center;
+  margin: 3px;
+}
+
+#aside-latestposts a {
+  font-family: 'montserratbold';
+  text-decoration: none;
+}
+
+#aside-latestposts article p {
+  margin-bottom: 0;
+}
+
+.aside-latestposts-info {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+#aside-latestposts article p {
+  margin-top: 4px;
+}
+
+.light-date {
+  color: white;
+}
+
+.button-small {
+  font-family: 'montserratbold';
+  font-size: 14px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 6px;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 5px 3px;
+}
+
+.button-small:hover {
+    background-color: rgba(255, 30, 30, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s;
+}
+
+.yellow {
+  background-color: rgba(222, 226, 93, 0.6);
+}
+
+#aside-latestposts article p a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#aside-latestposts article h3 a:hover {
+  color: rgba(255, 50, 50, 0.8);
+  text-decoration: underline;
+  transition: all 0.05s;
+}
+
+#aside-latestposts article p a:hover {
+  color: rgba(255, 50, 50, 0.8);
+  text-decoration: underline;
+  transition: all 0.05s;
+}
+
+.form-input {
+  font-family: 'montserratmedium';
+  font-size: 15px;
+  padding: 10px;
+  border: 0px solid black;
+  border-radius: 5px;
+  margin: 4px 0;
+  width: 100%;
+  background-color: #333;
+  opacity: 0.7;
+}
+
+.form-input:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  transition: all 0.8s;
+}
+
+.signin-button {
+  text-align: center;
+  padding: 6px 50px;
+  margin: 10px 50px;
+}
+
+#signup-text-positionfix {
+  margin-left: 6px;
+}
+
+.signup-text, .signup-text-link {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+  display: inline;
+  text-align: center;
+}
+
+.signup-text-link:hover {
+  font-family: 'montserratbold';
+  color: rgba(255, 70, 70, 0.8);
+  transition: all 0.2s;
+}
 
 /*###############################*/
 
@@ -363,7 +530,7 @@ li a {
   float: left;
   display: block;
   text-align: center;
-  padding: 22px 34px;
+  padding: 22px 16px;
   text-decoration: none;
 }
 
@@ -386,7 +553,7 @@ li a:hover {
   font-family: 'montserratsemibold';
   font-size: 46px;
   position: absolute;
-  left: 1236px;
+  left: 983px;
   line-height: 1;
 }
 
@@ -394,7 +561,7 @@ li a:hover {
   font-family: 'montserratsemibold';
   font-size: 46px;
   position: absolute;
-  left: 1545px;
+  left: 1258px;
   line-height: 1;
 }
 /* dropdown */
